@@ -2,37 +2,16 @@
 
 #### 介绍
 PrecisionRetrieval精准检索
+站点搜索引擎，用户输入一个关键词，系统将返回多个搜索结果。每个搜索结果包括标题描述和展示URL，用户可以点击标题
+以跳转至相应的内容，让一些没有搜索功能的网站使用更方便。
+
+#### 个人职责：
+通过Http请求，下载官方最新文档，进行数据去标签与数据清洗，提取title并构建url。
+根据文档与关键字构建正排索引，倒排索引。
+将用户输入的搜索词进行分词处理，并查询倒排索引，合并相关文档，根据权重排序生成检索结果。
+搭建 HTTP 服务器，提供搜索页面和展示搜索结果。确保服务器的稳定性和高并发性，处理用户请求和跳转功能。
+编写前端代码，提供必要的 API 接口和支持，确保用户可以通过点击搜索结果跳转至相应的 API 文档。
+
+#### 应用技术： C/C++、Boost库、Curl库、Linux系统/网络编程、Vim、g++、git、MakeFile。
 
 
-#### 软件架构
-软件架构说明
-
-
-#### 安装教程
-
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
-#### 使用说明
-
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
-#### 参与贡献
-
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
-
-
-#### 特技
-
-1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2.  Gitee 官方博客 [blog.gitee.com](https://blog.gitee.com)
-3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解 Gitee 上的优秀开源项目
-4.  [GVP](https://gitee.com/gvp) 全称是 Gitee 最有价值开源项目，是综合评定出的优秀开源项目
-5.  Gitee 官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6.  Gitee 封面人物是一档用来展示 Gitee 会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
